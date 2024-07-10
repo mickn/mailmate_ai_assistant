@@ -1,0 +1,9 @@
+{
+    name = "Compose with GPT";
+    uuid = "90978F3C-A763-4BB4-981E-50CAE2C28F63";
+    script = "#!/bin/bash\n/opt/homebrew/bin/python3 ~/Library/Application\\ Support/MailMate/Bundles/GPTAssistant.mmbundle/Support/bin/gpt_assist.py";
+    input = "canonical";
+    output = "actions";
+    keyEquivalent = "^C";
+    environment = "MM_SUBJECT=${subject.body}\nMM_TO=${to.address}\nMM_FROM=${from.address}\nMM_CONTENT_TYPE=${content-type.mime:text/plain}\nPYTHONIOENCODING=utf-8";
+}
